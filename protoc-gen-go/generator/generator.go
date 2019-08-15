@@ -332,6 +332,30 @@ func (d *FileDescriptor) goFileName(pathType pathType) string {
 	return name
 }
 
+// goFileName returns the output name for the generated Go file.
+func (d *FileDescriptor) goPFileName(pathType pathType, pname string) string {
+	name := *d.Name
+	if ext := path.Ext(name); ext == ".proto" || ext == ".protodevel" {
+		name = name[:len(name)-len(ext)]
+	}
+	name += fmt.Sprintf("/%s.go", pname)
+
+	if pathType == pathTypeSourceRelative {
+		return name
+	}
+
+	// Does the file have a "go_package" option?
+	// If it does, it may override the filename.
+	if impPath, _, ok := d.goPackageOption(); ok && impPath != "" {
+		// Replace the existing dirname with the declared import path.
+		_, name = path.Split(name)
+		name = path.Join(string(impPath), name)
+		return name
+	}
+
+	return name
+}
+
 func (d *FileDescriptor) addExport(obj Object, sym symbol) {
 	d.exported[obj] = append(d.exported[obj], sym)
 }
