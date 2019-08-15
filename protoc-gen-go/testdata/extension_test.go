@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/toury12/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -38,9 +38,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	base "github.com/golang/protobuf/protoc-gen-go/testdata/extension_base"
-	user "github.com/golang/protobuf/protoc-gen-go/testdata/extension_user"
+	"github.com/toury12/protobuf/proto"
+	base "github.com/toury12/protobuf/protoc-gen-go/testdata/extension_base"
+	user "github.com/toury12/protobuf/protoc-gen-go/testdata/extension_user"
 )
 
 func TestSingleFieldExtension(t *testing.T) {

@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2018 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/toury12/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -33,7 +33,7 @@ syntax = "proto3";
 
 package test;
 
-option go_package = "github.com/golang/protobuf/protoc-gen-go/testdata/imports";
+option go_package = "github.com/toury12/protobuf/protoc-gen-go/testdata/imports";
 
 import "imports/test_a_1/m1.proto";
 

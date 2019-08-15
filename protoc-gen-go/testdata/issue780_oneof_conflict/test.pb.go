@@ -5,7 +5,7 @@ package oneoftest
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
+	proto "github.com/toury12/protobuf/proto"
 	math "math"
 )
 

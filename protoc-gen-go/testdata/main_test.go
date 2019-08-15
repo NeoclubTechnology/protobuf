@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/toury12/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -36,9 +36,9 @@ package testdata
 import (
 	"testing"
 
-	importspb "github.com/golang/protobuf/protoc-gen-go/testdata/imports"
-	multipb "github.com/golang/protobuf/protoc-gen-go/testdata/multi"
-	mytestpb "github.com/golang/protobuf/protoc-gen-go/testdata/my_test"
+	importspb "github.com/toury12/protobuf/protoc-gen-go/testdata/imports"
+	multipb "github.com/toury12/protobuf/protoc-gen-go/testdata/multi"
+	mytestpb "github.com/toury12/protobuf/protoc-gen-go/testdata/my_test"
 )
 
 func TestLink(t *testing.T) {

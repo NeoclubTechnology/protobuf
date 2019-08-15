@@ -4,16 +4,16 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/golang/protobuf/protoc-gen-go/generator/internal/remap"
+	"github.com/toury12/protobuf/proto"
+	"github.com/toury12/protobuf/protoc-gen-go/descriptor"
+	"github.com/toury12/protobuf/protoc-gen-go/generator/internal/remap"
 	"go/ast"
 	"go/parser"
 	"go/printer"
 	"go/token"
 	"log"
 
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
+	plugin "github.com/toury12/protobuf/protoc-gen-go/plugin"
 )
 
 type TmplGen struct {
