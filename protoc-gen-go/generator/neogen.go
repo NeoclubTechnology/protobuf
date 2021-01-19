@@ -4,21 +4,21 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/toury12/protobuf/proto"
-	"github.com/toury12/protobuf/protoc-gen-go/descriptor"
-	"github.com/toury12/protobuf/protoc-gen-go/generator/internal/remap"
+	"github.com/NeoclubTechnology/protobuf/proto"
+	"github.com/NeoclubTechnology/protobuf/protoc-gen-go/descriptor"
+	"github.com/NeoclubTechnology/protobuf/protoc-gen-go/generator/internal/remap"
 	"go/ast"
 	"go/parser"
 	"go/printer"
 	"go/token"
 	"log"
 
-	plugin "github.com/toury12/protobuf/protoc-gen-go/plugin"
+	plugin "github.com/NeoclubTechnology/protobuf/protoc-gen-go/plugin"
 )
 
 type TmplGen struct {
 	Generator
-	PName string
+	PName  string
 	Render func(g *Generator, fd *FileDescriptor)
 }
 
@@ -124,4 +124,3 @@ func (g *TmplGen) GenerateAllFiles() {
 		}
 	}
 }
-
